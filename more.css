@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+body{
+    /* background: var(--background-color);
+    color: var(--text-color); */
+    margin: 1rem;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+}
+
+:root{
+    --background-color:rgba(13, 22, 29, 0.747);
+    --black:#302e4d;
+    --snd-bg-color: #262b40;
+    --main-color: rgb(94, 124, 190);
+    --Dark_Blue: hsl(233, 26%, 24%);
+    --Lime_Green: hsl(136, 65%, 51%);
+    --Bright_Cyan: hsl(192, 70%, 51%);
+    --Grayish_Blue: hsl(233, 8%, 62%);
+    --Light_Grayish_Blue: hsl(220, 16%, 96%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+    --text-color: hsl(0, 0%, 100%);
+}
+html{
+    font-size: 80%;
+}
+.container{
+    padding-top: 30px;
+    padding-bottom: 70px;
+    max-width: 1350px;
+    width: 100%;
+    margin: auto;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.section-title >h2{
+    font-size: 4rem;
+    color: var(--Bright_Cyan);
+    font-weight: 600;
+    position: relative;
+}
+.about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: var(--snd-bg-color); */
+    font-size: 1.8rem;
+    border-radius: 1%;
+}
+.about-text >h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    /* color: var(--background-color); */
+}
+.about-text >h3 >span{
+    color: var(--Lime_Green);
+}
+.about-text >p{
+    font-size: 20px;
+    line-height: 25px;
+}
+.personal-info{
+    flex: 0 0 60%;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.info-item >p{
+    font-weight: 600;
+    padding: 10px;
+    font-size: 20px;
+}
+.info-item >p >span{
+    font-weight: 400;
+    color: var(--Grayish_Blue);
+    margin-left: 4px;
+}
+.buttons{
+    margin-top: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    margin-right: 15px;
+    margin-top: 10px;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
+.skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.skill-item >h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.progress{
+    background-color: var(--background-color);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    background-color: var(--Lime_Green);
+}
+.skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--background-color);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.education,
+.experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
